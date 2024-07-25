@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: aquamarine;
+        }
+        .container{
+            display: flex;
+             justify-content: center;
+             flex-wrap: wrap;
+             align-content: center;
+              
+            
+        }
+        .card{
+            width:200px;
+            background-color: aqua;
+            align-content: center;
+            margin:20px;
+         transition: all 1s ease;
+        }
+        
+        .card img{
+            width:200px;
+        }
+        a{
+            background-color: rgb(78, 228, 78);
+            text-decoration: none;
+        }
+        .card:hover{
+       background-color: darkgrey; 
+       color: white;
+       transform: scale(1.1);
+       transition: all 1s ease ;
+    }
+    #sec1{
+        width: 100vw;
+        height: 100vh;
+    }
+    </style>
+</head>
+<body> 
+    <section id="sec1">
+
+    </section>
+    <section class="container">
+<div class="card" data-aos="fade-left">
+    <div class="image">
+<img src="weather1.avif" alt="">
+    </div>
+    <h2>Card1</h2>
+     
+    <a href="">ReadMore</a>
+</div>
+<div class="card" data-aos="flip-down">
+    <div class="image">
+<img src="weather2.avif" alt="">
+    </div>
+    <h2>Card1</h2>
+    
+    <a href="">ReadMore</a>
+</div>
+<div class="card" data-aos="zoom-in">
+    <div class="image">
+<img src="weather3.avif" alt="">
+    </div>
+    <h2>Card1</h2>
+   
+    <a href="">ReadMore</a>
+</div>
+
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
+</body>
+</html>
